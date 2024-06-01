@@ -1,0 +1,142 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KKRHUB = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame2 = Instance.new("Frame")
+local PC = Instance.new("ImageButton")
+local PH = Instance.new("ImageButton")
+local FramePH = Instance.new("Frame")
+local FramePC = Instance.new("Frame")
+
+--Properties:
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+KKRHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = KKRHUB
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.34439528, 0, 0.241854638, 0)
+Frame.Size = UDim2.new(0, 421, 0, 306)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.195841089, 0, 0.0745983273, 0)
+ImageLabel.Size = UDim2.new(0, 257, 0, 259)
+ImageLabel.Image = "rbxassetid://13440861942"
+
+Frame2.Name = "Frame2"
+Frame2.Parent = KKRHUB
+Frame2.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.34439528, 0, 0.241854638, 0)
+Frame2.Size = UDim2.new(0, 421, 0, 306)
+Frame2.Visible = false
+
+PC.Name = "PC"
+PC.Parent = Frame2
+PC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PC.BackgroundTransparency = 1.000
+PC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PC.BorderSizePixel = 0
+PC.Position = UDim2.new(0.607566297, 0, 0.353383482, 0)
+PC.Size = UDim2.new(0, 100, 0, 100)
+PC.Image = "rbxassetid://13474626985"
+PC.MouseButton1Click:Connect(function()
+	script.Parent.KKRHUB.Frame2.Visible = false
+	script.Parent.KKRHUB.FramePC.Visible = true
+end)
+
+PH.Name = "PH"
+PH.Parent = Frame2
+PH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PH.BackgroundTransparency = 1.000
+PH.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PH.BorderSizePixel = 0
+PH.Position = UDim2.new(0.12808916, 0, 0.353383482, 0)
+PH.Size = UDim2.new(0, 100, 0, 100)
+PH.Image = "rbxassetid://13474640049"
+PH.MouseButton1Click:Connect(function()
+	script.Parent.KKRHUB.Frame2.Visible = false
+	script.Parent.KKRHUB.FramePH.Visible = true
+end)
+
+FramePH.Name = "FramePH"
+FramePH.Parent = KKRHUB
+FramePH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FramePH.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FramePH.BorderSizePixel = 0
+FramePH.Position = UDim2.new(0.34439528, 0, 0.241854638, 0)
+FramePH.Size = UDim2.new(0.310471982, 0, 0.383458644, 0)
+FramePH.Visible = false
+
+FramePC.Name = "FramePC"
+FramePC.Parent = KKRHUB
+FramePC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FramePC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FramePC.BorderSizePixel = 0
+FramePC.Position = UDim2.new(0.34439528, 0, 0.241854638, 0)
+FramePC.Size = UDim2.new(0, 421, 0, 306)
+FramePC.Visible = false
+
+-- Scripts:
+
+local function SDIAVG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	print("KKR")
+	wait(1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "1/5"; -- The text
+		Icon = "rbxassetid://13867779321";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	wait(1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "2/5"; -- The text
+		Icon = "rbxassetid://13867779321";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	wait(1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "3/5"; -- The text
+		Icon = "rbxassetid://13867779321";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	wait(1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "4/5"; -- The text
+		Icon = "rbxassetid://13867779321";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	wait(2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "5/5"; -- The text
+		Icon = "rbxassetid://13867779321";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";  -- The title
+		Text = "finish"; -- The text
+		Icon = "rbxassetid://13867768098";
+		Duration = "3"; -- How much will the warning be visible
+	})
+	script.Parent.Visible = false
+	script.Parent.Parent.Frame2.Visible = true
+end
+coroutine.wrap(SDIAVG_fake_script)()
